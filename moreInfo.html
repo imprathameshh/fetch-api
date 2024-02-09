@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="" href="style2.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Redirect</h1>
+    <ul id="results">
+
+    </ul>
+  </div>
+  <script>
+    var baseUrl = (window.location).href;
+    var pId = baseUrl.substring(baseUrl.lastIndexOf('?') + 1);
+    let api = fetch(`https://fakestoreapi.com/products/${pId}`)
+      .then(res => res.json())
+      .then((data) => {
+        let output = "";
+        [data].map(function (items) {
+          output += `<li>
+            <div class='product'>
+              <img src="${items.image}" />
+              <h4>Title : ${items.title}</h4>
+              <h5 >Price :  ${items.price}</h5>
+              <p>Description : ${items.description}</p>
+              <h5>Category : ${items.category}</h5>
+              </div>
+             </li>`;
+
+        })
+        document.getElementById("results").innerHTML = output;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+  </script>
+
+</body>
+
+</html>
