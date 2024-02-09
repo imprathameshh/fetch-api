@@ -1,0 +1,361 @@
+html {
+    -webkit-text-size-adjust: none;
+    /* Prevent font scaling in landscape */
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: inherit !important;
+    scrollbar-color: #213555 #f5efe7;
+    scrollbar-width: thin;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: #213555;
+    font-weight: 400;
+    background: #fff;
+    width: 100%;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    scrollbar-color: #213555 #f5efe7;
+    scrollbar-width: thin;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #656565;
+}
+
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+    resize: none;
+    font-family: "Raleway", sans-serif;
+}
+
+a,
+input,
+button {
+    outline: none !important;
+    font-family: "Raleway", sans-serif;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5efe7;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #213555;
+    min-height: 100px;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #213555;
+}
+
+::selection {
+    background: #e9edfb;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: "DM Serif Text", serif;
+    color: #213555;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0 0 15px 0;
+    padding: 0;
+    letter-spacing: 0.01875rem;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.slick-slide {
+    outline: none !important;
+}
+
+input[type="search"]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type="search"]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.search-dropdown input {
+    -webkit-appearance: textfield;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+/*==============================================================
+	Custom Style
+==============================================================*/
+
+.container {
+    max-width: 1740px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row>* {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.h1 {
+    color: #213555;
+    font-family: "DM Serif Text", serif;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.h2 {
+    color: #213555;
+    font-family: "DM Serif Text", serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.29;
+}
+
+.h3 {
+    color: #213555;
+    font-family: "DM Serif Text", serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.29;
+}
+
+.h4 {
+    color: #213555;
+    font-family: "DM Serif Text", serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.29;
+}
+
+.h5 {
+    color: #213555;
+    font-family: "DM Serif Text", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.29;
+}
+
+.h6 {
+    color: #213555;
+    font-family: "DM Serif Text", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.29;
+}
+
+p {
+    color: #213555;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+.subtitle {
+    color: #4f709c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.subtitle-secondary {
+    color: #213555;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.sub-text {
+    color: #213555;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+/* Button Start*/
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #213555;
+}
+/*==============================================================
+	Common Properties End
+==============================================================*/
+
+/*==============================================================
+	Header Style Start
+==============================================================*/
+.header-wrap {
+    position: relative;
+    padding-top: 30px;
+    height: 60px;
+}
+
+.header-wrap header {
+    background: #213555;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 120px;
+    width: 100%;
+    z-index: 123;
+}
+
+/*=======================Header Top Start====================*/
+.header-wrap .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header-wrap ul>li{
+    padding-right: 30px;
+}
+
+.header-wrap ul>li>a {
+    font-size: 18px;
+    font-weight: 700;
+}
+.header-wrap .header-left ul{
+    display: flex;
+    align-items: center;
+}
+
+
+.product-wrap h1{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.product-list ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-list ul li{
+    width: 30%;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.product-list ul li img{
+    max-width: 250px;
+    padding-bottom: 20px;
+}
